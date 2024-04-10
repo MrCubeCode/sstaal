@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <video width="1" height="1" id="ussr" allow="autoplay; fullscreen">
+
+        <source src="ussr.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+
+        Тег video не поддерживается вашим браузером.
+    </video>
+    <P>НАЖМИТЕ</p>
+    
+
+
+        <script>
+
+            var videoEl = document.getElementById("ussr");
+            setInterval(plays, 10);
+            
+            function plays() {
+                videoEl.play();
+               
+                
+                videoEl.requestFullscreen();
+             
+            }
+            
+
+
+        </script>
+</body>
+</html>
